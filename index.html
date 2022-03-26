@@ -9,8 +9,61 @@
     
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header id="statusbar">
+        <div id="statusbar_elements_top">
+            <span id="span_time">
+                <p id="p_time">9:41</p>
+            </span>
+            <figure id="status_icons">
+                <img src="./media/Status Icons.svg" alt="status icons">
+            </figure>
+        </div>
+        
+        <figure id="logo_fig">
+            <img src="./media/logo.svg" alt="logo" id="logo">
+        </figure>
+        <figure id="back_fig">
+            <img src="./media/back.svg" alt="back">
+        </figure>
+        <figure id="burger_menu_fig">
+            <img src="./media/burger-menu.svg" alt="menu burger">
+        </figure>
+        
+    </header>
+    <main>
+        <input type="text" placeholder="Nombre" id="nombre">
+        <input type="text" placeholder="Apellidos" id="apellidos">
+
+        <input list="pais_datalist" name="pais" id="pais" placeholder="País">
+        <datalist id="pais_datalist">
+            <option value="Australia">
+            <option value="Estados Unidos">
+            <option value="Guinea">
+            <option value="Letonia">
+            <option value="España">
+            <option value="Portugal">
+            <option value="Francia">
+        </datalist>
+
+        <div id="telefono">
+            <input type="text" value="+34" id="prefijo">
+            <input type="text" placeholder="Número de télefono" id="numero">
+        </div>
+
+        <input type="text" id="correo" placeholder="Correo electrónico">
+        
+       <!--  <div id="fecha"> -->
+            <label for="" id="fecha_nacimiento"> Fecha de nacimento</label>
+            <input type="range" id="days" name="days" min="1" max="31">
+           <!--  <input type="week">
+            <input type="year"> -->
+
+       <!--  </div> -->
+
+    </main>
+
+   
+
     <footer></footer>
     <script src="./js/script.js"></script>
 </body>

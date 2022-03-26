@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/*---------COLORS-------------
+primary color: #5D5FEF;
+secundary purple: #A5A6F6;
+secundary purple2: #CCCDF9
+red: #EB5757;
+green: #27AE60
+black:#333333
+dark grey: #828282;
+light grey: #BDBDBD;
+almost white: #F2F2F2;
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+/*-----------TEXT STYLE-----------*/
+
+.small_text{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+
+color: #333333;
+}
+
+.title{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+
+color: #333333;
+}
+
+.regular_text{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+
+color: #333333;
+}
+
+
+
+
+/*--------------------
+
+
+        HEADER
+
+
+---------------------*/
+
+#statusbar{
+    position: absolute;
+    width: 375px;
+    height: 104px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #5D5FEF;
+}
+
+#statusbar_elements_top{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 59.62%;
+}
+
+#status_icons{
+    position: absolute;
+    width: 69px;
+    height: 14px;
+    right: 14px;
+    top: 16px;
+    margin: 0;
+}
+
+#span_time{
+    position: absolute;
+    width: 54px;
+    height: 21px;
+    left: 21px;
+    top: 12px;
+}
+
+#p_time{
+    color: #F2F2F2;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+#back_fig{
+    position: absolute;
+    left: 4.27%;
+    right: 89.33%;
+    top: 60.58%;
+    bottom: 16.35%;
+    margin:0;
+}
+
+#back_fig:hover{
+    opacity: 0.5;
+}
+
+#logo{
+    position: absolute;
+    left: 43.73%;
+    right: 43.73%;
+    top: 51.92%;
+    bottom: 12.5%;
+}
+
+#burger_menu_fig{
+    position: absolute;
+    left: 89.33%;
+    right: 4.27%;
+    top: 60.58%;
+    bottom: 16.35%;
+    margin:0;
+}
+
+#burger_menu_fig:hover{
+    opacity: 0.5;
+}
+
+
+
+/*--------------------
+
+
+        FORM
+
+
+---------------------*/
+
+#nombre{
+
+    position: absolute;
+    width: 343px;
+    height: 56px;
+    left: 16px;
+    top: 215px;
+    border-radius: 8px;
+
+}
+
+#apellidos{
+    position: absolute;
+    width: 343px;
+    height: 56px;
+    left: 16px;
+    top: 314px;
+}
+
+#pais{
+    position: absolute;
+    width: 343px;
+    height: 56px;
+    left: 16px;
+    top: 415px;
+}
+
+#telefono{
+    display: flex;
+    position: absolute;
+    width: 62px;
+    height: 56px;
+    left: 18px;
+    top: 515px;
+}
+
+#prefijo{
+    position: absolute;
+    width: 62px;
+    height: 56px;
+ 
+}
+
+#numero{
+    position: absolute;
+    width: 264px;
+    height: 56px;
+    margin-left: 77px;
+}
+
+#days{
+    position: absolute;
+    width: 110px;
+    height: 56px;
+    left: 16px;
+    top: 728px;
+}
+
+#correo{
+    position: absolute;
+    width: 343px;
+    height: 56px;
+    left: 16px;
+    top: 614px;
+}
+
+#fecha_nacimiento{
+    position: absolute;
+    width: 141px;
+    height: 16px;
+    left: 28px;
+    top: 697px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.3);
+}
