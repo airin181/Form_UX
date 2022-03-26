@@ -156,24 +156,82 @@ color: #333333;
 
 ---------------------*/
 
+
+.input{
+    background: #F2F2F2;
+    /* CareSwitch/Gris claro */
+
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 141px;
+    height: 16px;
+}
+
+input[type="text"],[type="password"],[type="datalist"]::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    padding-left: 10px; 
+} 
+
+
+#titulo{
+    color:#5D5FEF;
+    position: absolute;
+    width: 304px;
+    height: 27px;
+    left: 36px;
+    top: 128px;
+    margin:0;
+}  
+
+
 #nombre{
 
     position: absolute;
-    width: 343px;
-    height: 56px;
+    width: 349px;
+    height: 58px;
     left: 16px;
-    top: 215px;
-    border-radius: 8px;
+    top: 184px;
 
 }
 
 #apellidos{
     position: absolute;
-    width: 343px;
-    height: 56px;
+    width: 349px;
+    height: 58px;
     left: 16px;
-    top: 314px;
+    top: 265px;
 }
+
+#hr1{
+    position: absolute;
+    width: 341px;
+    height: 0px;
+    top: 337px;
+    left: 19px;
+
+    border: 1px solid #BDBDBD;
+    }
+
+
+#pais_label{
+    position: absolute;
+    width: 304px;
+    height: 27px;
+    left: 18px;
+    top: 376px;
+}
+
+
 
 #pais{
     position: absolute;
@@ -181,57 +239,115 @@ color: #333333;
     height: 56px;
     left: 16px;
     top: 415px;
+    content: "\25bc"
 }
 
-#telefono{
-    display: flex;
+input::-webkit-calendar-picker-indicator{
+    opacity:1;
+  }
+
+ 
+
+
+#email{
     position: absolute;
-    width: 62px;
-    height: 56px;
-    left: 18px;
-    top: 515px;
+    width: 349px;
+    height: 58px;
+    left: 16px;
+    top: 520px;
 }
+
+#password{
+    position: absolute;
+    width: 349px;
+    height: 58px;
+    left: 16px;
+    top: 598px;
+}
+
+#repeat_password{
+    position: absolute;
+    width: 349px;
+    height: 58px;
+    left: 16px;
+    top: 680px;
+
+}
+
+
 
 #prefijo{
     position: absolute;
-    width: 62px;
-    height: 56px;
- 
+    width: 349px;
+    height: 58px;
+    left: 16px;
+    top: 794px;
+  
 }
 
 #numero{
     position: absolute;
-    width: 264px;
-    height: 56px;
-    margin-left: 77px;
-}
-
-#days{
-    position: absolute;
-    width: 110px;
-    height: 56px;
+    width: 349px;
+    height: 58px;
     left: 16px;
-    top: 728px;
+    top: 870px;
+} 
+
+#hr2{
+    position: absolute;
+    width: 341px;
+    height: 0px;
+    top: 754px;
+    left: 19px;
+
+    border: 1.5px solid #BDBDBD;
 }
 
-#correo{
+#cookies{
+ 
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    accent-color: #5D5FEF;
+}
+
+#cookies_div{
+    position: absolute;
+    width: 335px;
+    height: 16px;
+    left: 16px;
+    top: 975px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#info{
+    text-decoration: none;
+    color: #5D5FEF;
+    margin-left: 2px;
+}
+
+
+#registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 155px;
+
     position: absolute;
     width: 343px;
     height: 56px;
-    left: 16px;
-    top: 614px;
+    left: 18px;
+    top: 1022px;
+
+/* CareSwitch/Morado Primario */
+
+    background: #5D5FEF;
+    border-radius: 8px;
+    color: white;
+    border-style: none;
+    margin-bottom: 25px;
 }
 
-#fecha_nacimiento{
-    position: absolute;
-    width: 141px;
-    height: 16px;
-    left: 28px;
-    top: 697px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: rgba(0, 0, 0, 0.3);
-}

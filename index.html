@@ -28,37 +28,41 @@
         <figure id="burger_menu_fig">
             <img src="./media/burger-menu.svg" alt="menu burger">
         </figure>
-        
     </header>
     <main>
-        <input type="text" placeholder="Nombre" id="nombre">
-        <input type="text" placeholder="Apellidos" id="apellidos">
+        <p id="titulo" class="title">Crea tu cuenta CareSwitch</p>
+        <input type="text" placeholder="Nombre" id="nombre" class="input">
+        <input type="text" placeholder="Apellidos" id="apellidos" class="input">
 
-        <input list="pais_datalist" name="pais" id="pais" placeholder="País">
+        <hr id="hr1">
+        <label for="pais_datalist" id="pais_label" class="regular_text">PAIS O REGIÓN</label>
+        <input list="pais_datalist" name="pais" id="pais" placeholder="País" class="input" type="text">
+
         <datalist id="pais_datalist">
-            <option value="Australia">
-            <option value="Estados Unidos">
-            <option value="Guinea">
-            <option value="Letonia">
-            <option value="España">
-            <option value="Portugal">
-            <option value="Francia">
+            <option value="Australia"></option>
+            <option value="Estados Unidos"></option>
+            <option value="Guinea"></option>
+            <option value="Letonia"></option>
+            <option value="España"></option>
+            <option value="Portugal"></option>
+            <option value="Francia"></option>
         </datalist>
 
-        <div id="telefono">
-            <input type="text" value="+34" id="prefijo">
-            <input type="text" placeholder="Número de télefono" id="numero">
+        <input type="text" id="email" placeholder="Email" class="input">
+        <input type="password" id="password" placeholder="Contraseña" class="input">
+        <input type="password" id="repeat_password" placeholder="Repetir contraseña" class="input">
+
+        <hr id="hr2">
+        <input type="text" id="prefijo" placeholder="+34 (España)" class="input">
+        <input type="text" id="numero" placeholder="Número de teléfono" class="input">
+
+        <div id="cookies_div">
+            <input type="radio" name="accept" id="cookies" >
+            <label for="cookies" class="small_text">Acepto la política de privacidad y publicidad</label>
+            <a id="info" href="#" class="small_text">+ info</a>
         </div>
 
-        <input type="text" id="correo" placeholder="Correo electrónico">
-        
-       <!--  <div id="fecha"> -->
-            <label for="" id="fecha_nacimiento"> Fecha de nacimento</label>
-            <input type="range" id="days" name="days" min="1" max="31">
-           <!--  <input type="week">
-            <input type="year"> -->
-
-       <!--  </div> -->
+        <button type="submit" id="registro" class="regular_text">Registrarse</button>
 
     </main>
 
