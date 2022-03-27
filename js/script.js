@@ -9,7 +9,7 @@ const pais = document.getElementById("pais")
 
 const email = document.getElementById("email")
 const password = document.getElementById("password")
-const passwordRepeat = document.getElementById("repeat_password")
+const passwordRepetir = document.getElementById("repeat_password")
 
 const prefijo = document.getElementById("prefijo")
 const numero = document.getElementById("numero")
@@ -21,7 +21,7 @@ const registrarse = document.getElementById("registrarse")
 // REGEX
 
 const regexEmail = /[0-9a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]+/
-const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-8])(?=.{8,})/ //9 caracteres + 1 mayuscula, 1 minuscula + 1 numero
+const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-8])(?=.{8,})/ //8 o más caracteres + 1 mayuscula, 1 minuscula + 1 numero
 const regexTel = /^[0-9]+$/;
 
 
@@ -38,7 +38,7 @@ function toRed (param){
 
 let contador = 0;
 
-/*---------NOMBRE----------*/
+/*--------- NOMBRE ----------*/
 
 function rellenarNombre() {
     if(nombre.value == ""){
@@ -50,7 +50,7 @@ function rellenarNombre() {
     }
 }
 
-/*---------APELLIDO----------*/
+/*--------- APELLIDO ----------*/
 
 
 function rellenarApellido() {
@@ -64,7 +64,7 @@ function rellenarApellido() {
 }
 
 
-/*---------DATALIST PAISES----------*/
+/*--------- DATALIST PAISES ----------*/
 
 function rellenarPais() {
     if(pais.value == ""){
@@ -77,7 +77,7 @@ function rellenarPais() {
 }
 
 
-/*---------EMAIL----------*/
+/*--------- EMAIL ----------*/
 
 //sintaxis: regex.test(address)
 
@@ -93,9 +93,21 @@ function rellenarEmail(){
 
 
 
+/*--------- CONTRASEÑA ----------*/
 
 
-
+function rellenarPass(){
+    if(regexPassword.test(password.value) == true && passwordRepetir.value == password.value){
+        contador++;
+        console.log("pass: OK");
+    } else if(regexPassword.test(password.value) !== true){
+        toRed(password);
+        console.log("pass: falla1");
+    } else if(passwordRepetir.value !== password.value){
+        toRed(passwordRepetir);
+        console.log("pass: falla2");
+    }
+}
 
 
 
@@ -105,12 +117,15 @@ function rellenarEmail(){
 /*--------- FUNCIÓN VALIDACIÓN ----------*/
 
 formulario.addEventListener("submit", function validar(evento){
+
 evento.preventDefault();
+
 rellenarNombre();
 rellenarApellido();
 rellenarPais();
 rellenarEmail();
+rellenarPass();
+
+
 console.log("contador:",contador)
-
-
 })
