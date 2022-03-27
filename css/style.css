@@ -63,11 +63,7 @@ color: #333333;
 
 
 /*--------------------
-
-
         HEADER
-
-
 ---------------------*/
 
 #statusbar{
@@ -149,11 +145,7 @@ color: #333333;
 
 
 /*--------------------
-
-
         FORM
-
-
 ---------------------*/
 
 
@@ -164,13 +156,13 @@ color: #333333;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 8px;
-
+    color: #BDBDBD; 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.3);
+    
     position: absolute;
     width: 141px;
     height: 16px;
@@ -179,7 +171,9 @@ color: #333333;
 input[type="text"],[type="password"],[type="datalist"]::placeholder {  
                   
     /* Firefox, Chrome, Opera */ 
-    padding-left: 10px; 
+    padding-left: 10px;
+    
+    color: #333333;
 } 
 
 
@@ -235,7 +229,7 @@ input[type="text"],[type="password"],[type="datalist"]::placeholder {
 
 #pais{
     position: absolute;
-    width: 343px;
+    width: 349px;
     height: 56px;
     left: 16px;
     top: 415px;
@@ -247,7 +241,6 @@ input::-webkit-calendar-picker-indicator{
   }
 
  
-
 
 #email{
     position: absolute;
@@ -329,7 +322,7 @@ input::-webkit-calendar-picker-indicator{
 }
 
 
-#registro{
+#registrarse{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -351,3 +344,40 @@ input::-webkit-calendar-picker-indicator{
     margin-bottom: 25px;
 }
 
+#register {
+    display: none;
+    width: 60%;
+}
+
+#register img{
+   margin-top: 250px;
+    width: 100%;
+}
+
+#volver{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 155px;
+
+    position: absolute;
+    width: 343px;
+    height: 56px;
+    left: 18px;
+    top: 700px;
+
+/* CareSwitch/Morado Primario */
+
+    background: #5D5FEF;
+    border-radius: 8px;
+    color: white;
+    border-style: none;
+    margin-bottom: 25px;
+
+}
+
+#register h2{
+    text-align: center;
+}
