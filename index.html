@@ -30,40 +30,43 @@
         </figure>
     </header>
     <main>
-        <p id="titulo" class="title">Crea tu cuenta CareSwitch</p>
-        <input type="text" placeholder="Nombre" id="nombre" class="input">
-        <input type="text" placeholder="Apellidos" id="apellidos" class="input">
+        <form action="" id="formulario">
+            <p id="titulo" class="title">Crea tu cuenta CareSwitch</p>
+            <input type="text" placeholder="Nombre" id="nombre" class="input">
+            <input type="text" placeholder="Apellidos" id="apellidos" class="input">
+    
+            <hr id="hr1">
+            <label for="pais_datalist" id="pais_label" class="regular_text">PAIS O REGIÓN</label>
+            <input list="pais_datalist" name="pais" id="pais" placeholder="País" class="input" type="text">
+    
+            <datalist id="pais_datalist">
+                <option value="Australia"></option>
+                <option value="Estados Unidos"></option>
+                <option value="Guinea"></option>
+                <option value="Letonia"></option>
+                <option value="España"></option>
+                <option value="Portugal"></option>
+                <option value="Francia"></option>
+            </datalist>
+    
+            <input type="text" id="email" placeholder="Email" class="input">
+            <input type="password" id="password" placeholder="Contraseña" class="input">
+            <input type="password" id="repeat_password" placeholder="Repetir contraseña" class="input">
+    
+            <hr id="hr2">
+            <input type="text" id="prefijo" placeholder="+34 (España)" class="input">
+            <input type="text" id="numero" placeholder="Número de teléfono" class="input">
+    
+            <div id="cookies_div">
+                <input type="radio" name="accept" id="cookies" >
+                <label for="cookies" class="small_text">Acepto la política de privacidad y publicidad</label>
+                <a id="info" href="#" class="small_text">+ info</a>
+            </div>
+    
+            <button type="submit" id="registrarse" class="regular_text">Registrarse</button>
 
-        <hr id="hr1">
-        <label for="pais_datalist" id="pais_label" class="regular_text">PAIS O REGIÓN</label>
-        <input list="pais_datalist" name="pais" id="pais" placeholder="País" class="input" type="text">
-
-        <datalist id="pais_datalist">
-            <option value="Australia"></option>
-            <option value="Estados Unidos"></option>
-            <option value="Guinea"></option>
-            <option value="Letonia"></option>
-            <option value="España"></option>
-            <option value="Portugal"></option>
-            <option value="Francia"></option>
-        </datalist>
-
-        <input type="text" id="email" placeholder="Email" class="input">
-        <input type="password" id="password" placeholder="Contraseña" class="input">
-        <input type="password" id="repeat_password" placeholder="Repetir contraseña" class="input">
-
-        <hr id="hr2">
-        <input type="text" id="prefijo" placeholder="+34 (España)" class="input">
-        <input type="text" id="numero" placeholder="Número de teléfono" class="input">
-
-        <div id="cookies_div">
-            <input type="radio" name="accept" id="cookies" >
-            <label for="cookies" class="small_text">Acepto la política de privacidad y publicidad</label>
-            <a id="info" href="#" class="small_text">+ info</a>
-        </div>
-
-        <button type="submit" id="registro" class="regular_text">Registrarse</button>
-
+        </form>
+        
     </main>
     <footer></footer>
     <script src="./js/script.js"></script>

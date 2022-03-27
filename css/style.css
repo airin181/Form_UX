@@ -164,13 +164,13 @@ color: #333333;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 8px;
-
+    color: #BDBDBD; 
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.3);
+    
     position: absolute;
     width: 141px;
     height: 16px;
@@ -179,7 +179,9 @@ color: #333333;
 input[type="text"],[type="password"],[type="datalist"]::placeholder {  
                   
     /* Firefox, Chrome, Opera */ 
-    padding-left: 10px; 
+    padding-left: 10px;
+    
+    color: #333333;
 } 
 
 
@@ -235,7 +237,7 @@ input[type="text"],[type="password"],[type="datalist"]::placeholder {
 
 #pais{
     position: absolute;
-    width: 343px;
+    width: 349px;
     height: 56px;
     left: 16px;
     top: 415px;
@@ -329,7 +331,7 @@ input::-webkit-calendar-picker-indicator{
 }
 
 
-#registro{
+#registrarse{
     display: flex;
     flex-direction: row;
     justify-content: center;
